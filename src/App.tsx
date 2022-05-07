@@ -1,7 +1,11 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import PageContainer from 'components/page-container'
+import AppRoutes from 'routes/AppRoutes'
 
-const App = () => <></>
+const App = () => (
+  <PageContainer>
+    <AppRoutes />
+  </PageContainer>
+)
 
-export default App;
+export default App
