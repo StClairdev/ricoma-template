@@ -1,0 +1,51 @@
+type Colors =
+  | 'alice'
+  | 'amber'
+  | 'blue'
+  | 'bright_grey'
+  | 'cyan'
+  | 'cyan_blue'
+  | 'dark_orange'
+  | 'denim'
+  | 'dodger_blue'
+  | 'emrald'
+  | 'fuchsia'
+  | 'gray'
+  | 'green'
+  | 'grey_chateau'
+  | 'indigo'
+  | 'lime'
+  | 'neutral'
+  | 'orange'
+  | 'pink'
+  | 'prussian_blue'
+  | 'pumkin'
+  | 'purple'
+  | 'red'
+  | 'rose'
+  | 'seal-brown'
+  | 'sky'
+  | 'slate'
+  | 'suva'
+  | 'tangaroa'
+  | 'tangerine'
+  | 'teal'
+  | 'tropaz'
+  | 'violet'
+  | 'whisper'
+  | 'white_smoke'
+  | 'yellow'
+  | 'zinc'
+
+type Luminance = 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900
+
+type BgColor =
+  | `bg-${Colors}` // custom colors
+  | `bg-${Colors}-${Luminance}`
+  | 'bg-inherit'
+  | 'bg-current'
+  | 'bg-transparent'
+  | 'bg-black'
+  | 'bg-white'
+
+export type { BgColor, Colors, Luminance }

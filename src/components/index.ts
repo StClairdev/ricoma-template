@@ -1,5 +1,4 @@
-/**
- * This is the module export location for the components folder
- */
+import { Container, Header, Icon, IconTypes, Text } from './common'
 
-export {}
+export { Container, Header, Icon, Text }
+export type { IconTypes }
